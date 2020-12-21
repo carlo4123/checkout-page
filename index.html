@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="./css/style.css">
+   
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="heading1">Checkout</h1>
+      
+
+        <div class="checkout">
+            
+
+            <form action="" class="form">
+
+                <div class="checkout-information">
+
+                    <div class="checkout-information__contact">
+
+                   
+                
+                <h4 class="heading4  ">Contact infomation</h4>
+                <div class="form-group ">
+                    <label for="" class="form-label">E-mail</label>
+                    <div class="form-input-group">
+                        <input class="form-input" type="email"  placeholder="Enter your email..." required>
+                        <svg class="form__icon">
+                            <use xlink:href="./assets/email.svg#email"  />
+                        </svg>
+                        
+                    </div>
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="" class="form-label">phone</label>
+                    <div class="form-input-group">
+                    <input class="form-input" type="number" placeholder="Enter your phone..." required>
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/call.svg#Capa_1"  />
+                    </svg>
+                </div>
+                </div>
+
+                    </div>
+
+                 
+
+                 <div class="checkout-information__shipping">
+                <h4 class="heading4 col-2-of-2 ">Shipping Address</h4>
+
+                <div class="form-group col-2-of-2 ">
+                    <label for="" class="form-label">Full Name</label>
+                    <div class="form-input-group">
+                    <input class="form-input" type="text" placeholder="Enter your Name" required>
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/user.svg#user"  />
+                    </svg>
+                </div>
+                </div>
+
+
+                    
+                <div class="form-group col-2-of-2">
+                    <label for="" class="form-label">Address</label>
+                    <div class="form-input-group">
+                    <input class="form-input" type="text" placeholder="your Address..." required>
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/home.svg#home"  />
+                    </svg>
+                </div>
+                </div>
+
+
+                <div class="form-group col-2-of-2">
+                    <label for="" class="form-label">city</label>
+                    <div class="form-input-group">
+                    <input class="form-input" type="text" placeholder="your city..." required>
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/city.svg#city"  />
+                    </svg>
+                </div>
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="country" class="form-label">country</label>
+                       
+                    <div class="form-input-group">
+                        <select id="country" class="form-input" required>
+                            <option value="">Your Country</option>
+                            <option value="volvo">philippines</option>
+                            <option value="saab">thailand</option>
+                            <option value="opel">Japan</option>
+                            <option value="audi">korea</option>
+                          </select>
+                          <svg class="form-input__select-icon">
+                            <use xlink:href="./assets/arrow-down.svg#Capa_1"  />
+                        </svg>
+                          <svg class="form__icon">
+                            <use xlink:href="./assets/country.svg#country"  />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="form-group ">
+                    <label for="" class="form-label">post code</label>
+                    <div class="form-input-group">
+                    <input class="form-input" type="number" placeholder="Your postal code..." required>
+                    <svg class="form__icon">
+                        <use xlink:href="./assets/postal.svg#postal"  />
+                    </svg>
+                    </div>
+                </div>
+
+                <div class="save-info col-2-of-2">
+                    <input type="checkbox" id="save-info" class="save-info__input">
+                    <span class="save-info__input-box" >&nbsp;</span>
+                    <label for="save-info" class="form-label" >Save this information for next time</label>
+                </div>
+
+                <button class="btn-primary col-2-of-2">continue</button>
+
+                </div>
+
+                </div>
+                   
+
+                <div class="checkout-box">
+
+                    <div class="checkout-box__item">
+                        <div class="item">  
+                            <div class="item-img-container">
+                                <img src="./assets/photo1.png" alt="" class="item-image">
+                            </div>
+    
+                            <div class="item-description">
+                                <p class="item-name">Vintage Backbag</p>
+
+                                <p class="item-price">$54.99 <span class="item-price__old">$94.99</span></p>
+                                
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                  </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item">  
+                            <div class="item-img-container">
+                                <img src="./assets/photo2.png" alt="" class="item-image">
+                            </div>
+    
+                            <div class="item-description">
+                                <p class="item-name">Vintage Backbag</p>
+
+                                <p class="item-price">$54.99 <span class="item-price__old">$94.99</span></p>
+                                
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                  </div>
+                            </div>
+
+                        </div>
+
+                        
+
+
+                        <div class="cost">
+                            <div class="cost-shipping">
+                                <span class="heading4">Shipping</span>
+                                <span class="heading3">$19</span>
+                            </div>
+
+                            <div class="cost-total">
+                                <span class="heading4">Total</span>
+                                <span class="heading3">$149.98</span>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <a href="#" class="footer-link">Carlo Cominguez @ DevChallenges.io</a>
+    </div>
+    </div>
+    
+</body>
+</html>
