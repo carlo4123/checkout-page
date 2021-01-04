@@ -288,7 +288,7 @@ select:hover {
 }
 
 :checked + .save-info__input-box {
-  background-image: url(../assets/check.svg);
+  background-image: url(../assets/checked.svg);
 }
 
 .save-info__input-box {
